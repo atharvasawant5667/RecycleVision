@@ -7,7 +7,7 @@ st.set_page_config(page_title="RecycleVision", layout="centered")
 
 @st.cache_resource
 def load_model():
-    return tf.keras.models.load_model("garbage_classifier.h5")
+    return tf.keras.models.load_model("garbage_classifier_final.h5")
 
 model = load_model()
 
@@ -31,3 +31,4 @@ if uploaded_file:
 
     st.image(img, caption="Uploaded Image", use_column_width=True)
     st.success(f"Prediction: {predicted_class} ({confidence:.2f}%)")
+
