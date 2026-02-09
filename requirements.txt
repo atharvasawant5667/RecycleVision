@@ -1,4 +1,7 @@
-streamlit
-tensorflow-cpu
+python_version < 3.11
+
+streamlit==1.32.2
+tensorflow==2.15.0
+keras==2.15.0
 numpy
 pillow
